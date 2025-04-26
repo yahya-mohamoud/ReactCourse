@@ -1,0 +1,64 @@
+
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+  background-color: #282D35;
+  font-family: 'Cal Sans';
+  color: white;
+}
+
+header {
+  height: 90px;
+  background-color: #212222;
+  padding: 10px 25px;
+}
+
+nav{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+nav img{
+  width: 40px;
+  margin-right: 7px;
+  margin-left: 20px;
+}
+
+nav span {
+  color: #61DAF8;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+main{
+  padding: 60px 30px;
+  background-image: url("https://img.icons8.com/ios7/512/4D4D4D/react-native--v2.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(100vw - 240px);
+  background-position-y: calc(100vh - 550px);
+}
+
+main h1{
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.factsList {
+  margin: 20px 0 0 46px;
+  max-width: 400px;
+}
+
+.factsList li {
+  padding-block: 10px;
+  line-height: 10px;
+}
+
+.factsList li::marker {
+  color: #2babe7;
+  font-size: 1.5rem;
+}
