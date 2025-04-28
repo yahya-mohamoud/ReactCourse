@@ -1,5 +1,6 @@
 import { data } from "../Data";
 import Contact from "./Contact";
+import Jokes from "./Jokes";
 
 function Content() {
   const places = data.map((place) => (
@@ -29,6 +30,20 @@ return(
         {places}
       </ul>
       <Contact />
+      <Jokes
+        setup=" I got my daughter a fridge for her birthday."
+        punchline=" I can't wait to see her face light up when she opens it."
+      />
+      
+      <Jokes 
+        setup="Why don't pirates travel on mountain roads?"
+        punchline="Scurvy"
+      />
+      <Jokes 
+        setup="How did the hacker escape the police?"
+        punchline="How did the hacker escape the police?"
+      />
+      
   </main>
 )
  

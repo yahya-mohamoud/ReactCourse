@@ -88,3 +88,11 @@ nav {
   margin: 0 auto;
   flex: 1;
 }
+
+.jokes {
+  margin: 20px 10px;
+}
+
+.para{
+  font-weight: 700;
+}
