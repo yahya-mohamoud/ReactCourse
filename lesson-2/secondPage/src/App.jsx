@@ -1,11 +1,13 @@
 import "./App.css"
 import React from 'react'
-import Header from "./Heeader"
+import Header from "./components/Header"
+import Content from "./components/Content"
 
 function App() {
   return (
     <>
       <Header />
+      <Content />
     </>
   )
 }

@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
         <nav>
-            <h1>My travel journal</h1>
+            <h1>🌍My travel journal</h1>
         </nav>
     </header>
   )
