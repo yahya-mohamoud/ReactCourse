@@ -5,7 +5,6 @@
 }
 
 body{
-
 }
 
 header{
@@ -65,4 +64,8 @@ form #input {
 button::before{
   content: "+";
   margin-right: 6px;
+}
+
+ul {
+  padding: 15px 40px;
 }
