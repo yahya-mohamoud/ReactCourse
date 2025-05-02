@@ -4,9 +4,9 @@ import { useState } from "react"
 
 export default function App() {
   const [pads, setPads] = useState(padData)
-  
+
    const btns = pads.map(pad => (
-      <Pad padColor={pad.color} key={pad.id}/>
+      <Pad  pad={pad} key={pad.id}/>
    ))
 
 
