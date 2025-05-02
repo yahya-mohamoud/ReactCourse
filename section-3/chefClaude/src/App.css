@@ -93,3 +93,7 @@ ul {
   border: none;
   border-radius: 9px;
 }
+
+.get-recipe button:hover{
+  background-color: rgb(162, 68, 21);
+}
