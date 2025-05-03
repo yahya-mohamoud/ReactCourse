@@ -1,16 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-function Pad({pad}) {
-    const [on, setOn] = useState(pad.on)
+function Pad({pad, toggle}) {
 
-    function toggle() {
-        setOn(prevOn => !prevOn)
-    }
   return (
     <button 
-    onClick={toggle}
-    className={on ? "on" : undefined}
-    style={{backgroundColor: pad.color}}></button>
+      onClick={() => toggle(pad.id)}
+      className={pad.on == true ? "on": undefined}
+      style={{backgroundColor: pad.color}}
+    ></button>
   )
 }
 
