@@ -1,6 +1,6 @@
 import React from 'react'
 
-function IngredientLists({ingredients, handleClick, items}) {
+function IngredientLists({ingredients, getArecipe, items}) {
   return (
     <section>
     <h2>Ingredients on hand:</h2>
@@ -12,7 +12,7 @@ function IngredientLists({ingredients, handleClick, items}) {
            <h3>Ready for a recipe</h3>
            <p>Generate a recipe from your list of ingredients.</p>
           </div>
-          <button onClick={handleClick}>Get a recipe</button>
+          <button onClick={getArecipe}>Get a recipe</button>
     </div>
   }
   </section>

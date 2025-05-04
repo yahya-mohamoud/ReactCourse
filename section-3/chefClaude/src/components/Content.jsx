@@ -1,10 +1,11 @@
 import { useState } from "react";
 import ClaudeRecipe from "./ClaudeRecipe";
 import IngredientLists from "./IngredientLists";
+import { getRecipeFromMistral } from "../ai";
 
 function Content() {
   const [ingredients, setIngredients] = useState([])
-  const [isShown, setIShown] = useState(false)
+  const [recipe, setRecipe] = useState("")
 
   const items = ingredients.map((ingredient) => <li key={ingredient}>{ingredient}</li>)
 
@@ -13,8 +14,9 @@ function Content() {
       setIngredients(prevIngredients => [...prevIngredients, newIngredient])
   }
 
-  const handleClick = () => {
-    setIShown((prev) => prev = !prev)
+  const getArecipe = async () => {
+    const generatedRecipe = await getRecipeFromMistral(ingredients)
+    setRecipe(generatedRecipe)
   }
   return (
     <main className='main-cont'>
@@ -26,11 +28,11 @@ function Content() {
         </form>
      
        <IngredientLists 
-        handleClick={handleClick}
+        getArecipe={getArecipe}
         items={items}
         ingredients={ingredients}
        />
-       {isShown && <ClaudeRecipe />}
+       {recipe && <ClaudeRecipe recipe={recipe}/>}
     </main >
   )
 }
